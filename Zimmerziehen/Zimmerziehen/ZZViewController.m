@@ -39,8 +39,8 @@
     opacity = 1.0;
     
     //Programmaticaly initialize those frames
-    self.tempDrawImage=[[UIImageView alloc] initWithFrame: CGRectMake (0, 0, 600, 900)];
-    self.mainImage=[[UIImageView alloc] initWithFrame: CGRectMake (0, 0, 600, 900)];
+    self.tempDrawImage=[[UIImageView alloc] initWithFrame: self.view.frame];
+    self.mainImage=[[UIImageView alloc] initWithFrame: self.view.frame];
     self.mainImage.layer.borderWidth = 3;
     self.mainImage.layer.borderColor = [UIColor grayColor].CGColor;
     //Add imageView to view
